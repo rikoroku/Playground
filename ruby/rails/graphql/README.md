@@ -1,5 +1,7 @@
 # README
 
+This repo is based on [howtographql](https://www.howtographql.com/graphql-ruby/0-introduction/).
+
 ## How to start
 ### 1. Create .env file
 
