@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to start
+### 1. Create .env file
 
-Things you may want to cover:
+```bash
+$ cp .env.sample .env
+```
 
-* Ruby version
+### 2. Build and run
+You only have to do the following command.
+And then, you can see the app screen by inputting `http://localhost:3000` on the browser.
 
-* System dependencies
+```bash
+$ docker-compose up -d
+```
 
-* Configuration
+## Commands
+Following commands are to help develop.
 
-* Database creation
+RuboCop - Ruby linter and code formatter.
 
-* Database initialization
+```bash
+$ docker-compose exec app bundle exec rubocop
+```
 
-* How to run the test suite
+Brakeman - A Static analysis tool to check Ruby on Rails applications for security vulnerabilities.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+$ docker-compose exec app bundle exec brakeman
+```
