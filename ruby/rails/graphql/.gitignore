@@ -27,3 +27,8 @@
 /config/master.key
 
 vendor/*
+
+# Ignore data of postgres going on docker
+docker/data/*
+
+.env
