@@ -17,6 +17,9 @@ And then, you can see the app screen by inputting `http://localhost:3000` on the
 $ docker-compose up -d
 ```
 
+## How to try
+Visit `http://localhost:3000/graphiql` and put some GraphQL queries.
+
 ## Commands
 Following commands are to help develop.
 
