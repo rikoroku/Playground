@@ -43,6 +43,7 @@ group :development do
   gem 'brakeman', require: false
   gem 'bullet'
   gem 'solargraph'
+  gem 'graphiql-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
