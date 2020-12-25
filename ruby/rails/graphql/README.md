@@ -29,8 +29,14 @@ RuboCop - Ruby linter and code formatter.
 $ docker-compose exec app bundle exec rubocop
 ```
 
-Brakeman - A Static analysis tool to check Ruby on Rails applications for security vulnerabilities.
+Brakeman - Static analysis tool to check Ruby on Rails applications for security vulnerabilities.
 
 ```bash
 $ docker-compose exec app bundle exec brakeman
+```
+
+RSpec - Testing tool.
+
+```bash
+$ docker-compose exec -e "RAILS_ENV=test" app bundle exec rspec
 ```
