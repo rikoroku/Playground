@@ -12,3 +12,5 @@ AllCops:
     - 'public/**/*'
     - 'tmp/**/*'
     - 'Gemfile*'
+
+  SuggestExtensions: false
