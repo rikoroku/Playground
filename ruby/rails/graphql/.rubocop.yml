@@ -26,3 +26,6 @@ Metrics/BlockLength:
 RSpec/ExampleLength:
   Exclude:
     - 'spec/**/*'
+
+Style/ClassAndModuleChildren:
+  Enabled: false
