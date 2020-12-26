@@ -5,4 +5,10 @@ class User < ApplicationRecord
   before_save { self.email = email.downcase }
 
   include User::Validation
+
+  delegate :authenticate, to: :authenticator, prefix: true
+
+  def authenticator
+    @authenticator ||= User::Delegation::Authenticator.new(self)
+  end
 end
