@@ -18,3 +18,11 @@ AllCops:
 
 Documentation:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+RSpec/ExampleLength:
+  Exclude:
+    - 'spec/**/*'
