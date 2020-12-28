@@ -28,6 +28,8 @@ services:
       DB_PASSWORD: $DB_PASSWORD
       DB_DATABASE: $DB_DATABASE
       DB_DATABASE_HOST: $DB_HOST
+    tty: true
+    stdin_open: true
     networks:
       - overlay
     env_file:
