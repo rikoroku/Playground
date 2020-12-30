@@ -18,8 +18,6 @@ module Mutations
       token = user.authenticator_authenticate(credentials)
       return unless token
 
-      context[:session][:token] = token
-
       { user: user, token: token }
     end
   end
